@@ -42,7 +42,7 @@ class Child extends Parent {
 
 
 const joe = new Person({
-  "gender": "Male",
+  gender: "Male",
   "age": 42,
   "name": 'Joe',
   "job": "General Contractor"
@@ -57,6 +57,7 @@ const cindy = new Child({
   "name": "Cindy",
   "kid": 0
 });
+
 
 console.log(joe.speak());
 
