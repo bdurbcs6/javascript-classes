@@ -12,6 +12,16 @@ class Person {
   }
 };
 
+class Parent extends Person {
+  constructor(props) {
+    super(props);
+    this.children = props.children;
+  }
+  hasChildren () {
+    return `Hi,  i am ${this.name} and I have ${this.children} Children`
+  }
+};
+
 
 
 const joe = new Person({
@@ -21,4 +31,11 @@ const joe = new Person({
   "job": "General Contractor"
 });
 
+const albert = new Parent({
+  "name": "Albert",
+  "children": 3
+});
+
 console.log(joe.speak());
+
+console.log(albert.hasChildren());
