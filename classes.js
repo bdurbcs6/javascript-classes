@@ -10,4 +10,15 @@ class Person {
   speak () {
     return `Hey there, I'm ${this.name}`
   }
-}
+};
+
+
+
+const joe = new Person({
+  "gender": "Male",
+  "age": 42,
+  "name": 'Joe',
+  "job": "General Contractor"
+});
+
+console.log(joe.speak());
